@@ -1,0 +1,71 @@
+revel booking eg using GORM
+
+Routes:
+--------
+
+GET     /                                       Application.Index		Check if user 
+GET     /hotels                                 Hotels.Index
+GET     /hotels/list                            Hotels.List
+GET     /hotels/:id                             Hotels.Show
+GET     /hotels/:id/booking                     Hotels.Book
+POST    /hotels/:id/booking                     Hotels.ConfirmBooking
+POST    /bookings/:id/cancel                    Hotels.CancelBooking
+GET     /register                               Application.Register
+POST    /register                               Application.SaveUser
+GET     /settings                               Hotels.Settings
+POST    /settings                               Hotels.SaveSettings
+POST    /login                                  Application.Login
+GET     /logout                                 Application.Logout
+
+Hotels data struct:
+---------------------
+
+Name: Marriott Courtyard
+
+Address: Tower Pl, Buckhead
+
+City: Atlanta
+
+State: GA
+
+Zip: 30305
+
+Country: USA
+
+Nightly rate: 120
+
+Hotels model:
+
+Validate given Hotel.
+
+User data struct :
+----------------
+Name               string
+Username, Password string
+
+User Model:
+
+Validate method for the given user.
+Validate password.
+
+Booking model:
+----------------
+UserId       int
+	HotelId      int
+	CardNumber   string
+	NameOnCard   string
+	CardExpMonth int
+	CardExpYear  int
+	Smoking      bool
+	Beds         int
+
+	// Transient
+	CheckInDate  time.Time
+	CheckOutDate time.Time
+
+Validate a given Booking data.
+fn to find total amount.
+fn to find total nights.
+
+	
+	
