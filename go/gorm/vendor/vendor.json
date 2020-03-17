@@ -1,0 +1,21 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "csju/GecUTE9ofr5ASlYS2eRnvo=",
+			"path": "github.com/jinzhu/gorm",
+			"revision": "79a77d771dee4e4b60e9c543e8663bbc80466670",
+			"revisionTime": "2019-12-06T14:22:28Z",
+			"version": "v1.9.12",
+			"versionExact": "v1.9.12"
+		},
+		{
+			"checksumSHA1": "OoMUQ1Vnt/5gzbvdsOZz6zKShz4=",
+			"path": "github.com/jinzhu/inflection",
+			"revision": "196e6ce06ca4513fbcfcbc35dc15f66074df47c9",
+			"revisionTime": "2020-02-16T10:24:04Z"
+		}
+	],
+	"rootPath": "github.com/kiranmenon/learning/go/gorm"
+}
